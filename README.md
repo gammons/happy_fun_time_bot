@@ -1,3 +1,4 @@
+
 = Happy Fun Time Bot
 
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
@@ -25,7 +26,9 @@ HappyFunTime Bot:  Oh HAI Bob!!!
 ```
 
 ### So many IdeazzZz!!
-Add responders to insert random images of dogs in costumes!
+
+**Add responders to insert random images of dogs in costumes!**
+
 ```
 Bob: !findimage dog costume
 HappyFunTime Bot: Here ya go!
@@ -33,7 +36,8 @@ HappyFunTime Bot: Here ya go!
 ![](http://spoilurpets.com/images/Lobster%20Paws%20Dog%20Costume.JPG)
 
 
-Kick off a build!
+**Kick off a build!**
+
 ```
 Bob: !build_the_app
 HappyFunTime Bot: All tests PASSED!
@@ -45,7 +49,6 @@ Deploy your app!
 Bob: !deploy
 HappyFunTime Bot: Deploying now!
 ```
-
 
 === Bot creation Options:
 
