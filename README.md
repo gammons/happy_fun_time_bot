@@ -1,4 +1,4 @@
-<h1>Happy fun time bot</h1>
+# Happy fun time bot
 
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
 
@@ -54,7 +54,7 @@ Bob: !deploy
 HappyFunTime Bot: Deploying now!
 ```
 
-=== Bot creation Options:
+### Bot creation Options:
 
 * `:jid` - Required.
 * `:nick` - The nickname for the bot to use.
@@ -62,6 +62,6 @@ HappyFunTime Bot: Deploying now!
 * `:password` - The bot's password.
 * `:command_regex` - The regular expression to test for a command.  The default is a ! followed by a word.  e.g. `/^!(.+)$/`
 
-== Copyright
+## Copyright
 
 Copyright (c) 2011 Grant Ammons. See LICENSE.txt for further details.
