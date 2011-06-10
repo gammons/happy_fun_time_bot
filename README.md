@@ -1,4 +1,4 @@
-== Happy fun time bot
+<h1>Happy fun time bot</h1>
 
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
 
@@ -10,7 +10,10 @@ Lets take a look!
 require 'rubygems'
 require 'happy_fun_time_bot'
 
-@bot = HappyFunTimeBot.new(:jid => "xxxx@chat.hipchat.com", :nick => "HappyFunTime Bot", :room => "123_your_talk_chan@conf.hipchat.com", :password => "xxxx")
+@bot = HappyFunTimeBot.new(:jid => "xxxx@chat.hipchat.com", 
+                           :nick => "HappyFunTime Bot", 
+                           :room => "123_your_talk_chan@conf.hipchat.com", 
+                           :password => "xxxx")
 
 @bot.add_responder('heybot') do |from, args|
   "Oh HAI #{from}!!!"
