@@ -3,6 +3,7 @@
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
 
 Lets take a look!
+
 ```ruby
 #!/usr/bin/env ruby
 
