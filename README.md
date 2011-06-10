@@ -1,5 +1,4 @@
-
-= Happy Fun Time Bot
+== Happy fun time bot
 
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
 
