@@ -5,8 +5,6 @@ require 'xmpp4r'
 require 'xmpp4r/muc/helper/simplemucclient'
 require 'open-uri'
 require 'cgi'
-require 'httparty'
-require 'ruby-debug'
 
 $: << File.expand_path(File.dirname(__FILE__))
 

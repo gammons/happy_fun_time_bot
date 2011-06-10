@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
-require 'ruby-debug'
 
 describe "HappyFunTimeBot" do
   it "should load everything properly" do
