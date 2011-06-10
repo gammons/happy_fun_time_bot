@@ -42,9 +42,11 @@ HappyFunTime Bot: Here ya go!
 Bob: !build_the_app
 HappyFunTime Bot: All tests PASSED!
 ```
+
 ![](http://thehairpin.com/wp-content/uploads/2010/12/womanpic1001_228x342.jpeg)
 
-Deploy your app!
+**Deploy your app!**
+
 ```
 Bob: !deploy
 HappyFunTime Bot: Deploying now!
