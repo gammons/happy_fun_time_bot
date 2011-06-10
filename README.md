@@ -1,6 +1,6 @@
 # Happy fun time bot
 
-Have happy fun times with this configurable XMPP bot!  It is SO easy to use!
+Have happy fun times with this configurable XMPP bot!  It is SO easy to use, especially for Hipchat!
 
 Lets take a look!
 
