@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "happy_fun_time_bot"
   gem.homepage = "http://github.com/gammons/happy_fun_time_bot"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Simple XMPP bot framework}
+  gem.description = %Q{Easily create bots that can respond to anything!}
   gem.email = "grant@pipelinedealsco.com"
   gem.authors = ["Grant Ammons"]
   # dependencies defined in Gemfile

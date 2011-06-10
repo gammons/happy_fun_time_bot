@@ -8,10 +8,10 @@ require 'cgi'
 require 'httparty'
 require 'ruby-debug'
 
-$: << File.join(File.dirname(__FILE__), 'lib')
+$: << File.expand_path(File.dirname(__FILE__))
 
-require 'lib/responder'
-require 'lib/bot/muc_client'
+require 'responder'
+require 'bot/muc_client'
 
 class HappyFunTimeBot
   attr_accessor :config, :client, :muc, :responders, :command_regexp
