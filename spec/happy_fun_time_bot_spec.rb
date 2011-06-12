@@ -34,5 +34,10 @@ describe "HappyFunTimeBot" do
       @bot.send(:process, "bob", "!findimage monkey").should == ["finding an image"]
       @bot.send(:process, "bob", "!google monkey").should == ["googling for you, bob."]
     end
+
+    it "should contain the args in the args arg" do
+      @bot.add_responder("argarg") { |from, args| "your args are #{args}" }
+      @bot.send(:process, "bob", "!argarg monkey costume").should == ["your args are monkey costume"]
+    end
   end
 end

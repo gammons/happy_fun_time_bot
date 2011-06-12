@@ -53,7 +53,9 @@ class HappyFunTimeBot
   def process(from, command)
     return [] unless command =~ self.config[:command_regex]
     responders.select {|r| r.responds_to?($1) }.map  do |responder|
-      ret = responder.block.call(from, command.split.shift)
+      args = command.split
+      args.shift
+      ret = responder.block.call(from, args.join(' '))
       send_response(ret)
       ret
     end
