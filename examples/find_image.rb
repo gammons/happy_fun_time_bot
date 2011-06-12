@@ -2,8 +2,7 @@
 %w(rubygems happy_fun_time_bot httparty).each {|r| require r }
 
 # For hipchat, your :jid, :room and :password are available at https://www.hipchat.com/account/xmpp
-#@bot = HappyFunTimeBot.new(:jid => "xxxxx@chat.hipchat.com", :nick => "ImageBot", :room => "your_room@conf.hipchat.com", :password => "xxx")
-@bot = HappyFunTimeBot.new(:jid => "514_23995@chat.hipchat.com", :nick => "HappyFunTime Bot", :room => "514_dev_talk@conf.hipchat.com", :password => "kwanzaa")
+@bot = HappyFunTimeBot.new(:jid => "xxxxx@chat.hipchat.com", :nick => "ImageBot", :room => "your_room@conf.hipchat.com", :password => "xxx")
 
 # Let's create a simple image getter from google.
 class Google
@@ -28,7 +27,6 @@ end
 
 # let's find some images!
 @bot.add_responder('findimage') do |from, args|
-  $stdout << "args are #{args}\n"
   url = Google.get_image_url(args)
   "Look! #{url}"
 end
