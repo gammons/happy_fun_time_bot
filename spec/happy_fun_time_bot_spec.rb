@@ -39,5 +39,10 @@ describe "HappyFunTimeBot" do
       @bot.add_responder("argarg") { |from, args| "your args are #{args}" }
       @bot.send(:process, "bob", "!argarg monkey costume").should == ["your args are monkey costume"]
     end
+
+    it "should respond to all messages if we did not specify a specific responder" do
+      @bot.add_responder { |from, args| "got it." }
+      @bot.send(:process, "jim", "sending some stuff").should == ["got it."]
+    end
   end
 end

@@ -39,7 +39,7 @@ class HappyFunTimeBot
     self
   end
 
-  def add_responder(command  = '', &block)
+  def add_responder(command  = nil, &block)
     responders << Responder.new(command, &block)
   end
 
@@ -51,7 +51,8 @@ class HappyFunTimeBot
   private
 
   def process(from, command)
-    return [] unless command =~ self.config[:command_regex]
+    return [] if !responders.any? {|r| r.command.nil? } and !(command =~ self.config[:command_regex])
+
     responders.select {|r| r.responds_to?($1) }.map  do |responder|
       args = command.split
       args.shift

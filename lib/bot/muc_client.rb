@@ -4,15 +4,15 @@
 module Jabber
   module MUC
     class MUCClient
-      
+
       def join(jid, password=nil)
         if active?
           raise "MUCClient already active"
         end
-        
+
         @jid = (jid.kind_of?(JID) ? jid : JID.new(jid))
         activate
-        
+
         # Joining
         pres = Presence.new
         pres.to = @jid
@@ -20,13 +20,13 @@ module Jabber
         xmuc = XMUC.new
         xmuc.password = password
         pres.add(xmuc)
-        
+
         # NOTE: Adding 'maxstanzas="0"' to 'history' subelement of xmuc nixes
         # the history being sent to us when we join.
         history = XMPPElement.new('history')
         history.add_attributes({'maxstanzas' => '0'})
         xmuc.add(history)
-        
+
         # We don't use Stream#send_with_id here as it's unknown
         # if the MUC component *always* uses our stanza id.
         error = nil
@@ -43,7 +43,7 @@ module Jabber
               @affiliation = i.affiliation  # we're interested in if it's :owner
               @role = i.role                # :moderator ?
             end
-            
+
             handle_presence(r, false)
             true
           else
@@ -51,15 +51,15 @@ module Jabber
             false
           end
         }
-        
+
         if error
           deactivate
           raise ServerError.new(error)
         end
-        
+
         self
       end
-      
+
     end
   end
 end
