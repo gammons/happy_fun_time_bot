@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{happy_fun_time_bot}
-  s.version = "0.1.2"
+  s.name = "happy_fun_time_bot"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Grant Ammons"]
-  s.date = %q{2011-06-12}
-  s.description = %q{Easily create bots that can respond to anything!}
-  s.email = %q{grant@pipelinedealsco.com}
+  s.date = "2012-05-14"
+  s.description = "Easily create bots that can respond to anything!"
+  s.email = "grant@pipelinedealsco.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -28,17 +28,15 @@ Gem::Specification.new do |s|
     "examples/example.rb",
     "examples/find_image.rb",
     "happy_fun_time_bot.gemspec",
-    "lib/bot/muc_client.rb",
     "lib/happy_fun_time_bot.rb",
-    "lib/responder.rb",
     "spec/happy_fun_time_bot_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/gammons/happy_fun_time_bot}
+  s.homepage = "http://github.com/gammons/happy_fun_time_bot"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
-  s.summary = %q{Simple XMPP bot framework}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Simple XMPP bot framework"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -47,33 +45,30 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<xmpp4r>, [">= 0"])
       s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
-      s.add_development_dependency(%q<ruby-debug>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_development_dependency(%q<yard>, ["~> 0.6.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.10.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.8.0"])
+      s.add_development_dependency(%q<yard>, ["~> 0.8.1"])
+      s.add_development_dependency(%q<debugger>, ["~> 1.1.3"])
+      s.add_development_dependency(%q<simplecov>, ["~> 0.6.4"])
     else
-      s.add_dependency(%q<ruby-debug>, [">= 0"])
       s.add_dependency(%q<xmpp4r>, [">= 0"])
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<httparty>, [">= 0"])
-      s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_dependency(%q<yard>, ["~> 0.6.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<rspec>, ["~> 2.10.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
+      s.add_dependency(%q<yard>, ["~> 0.8.1"])
+      s.add_dependency(%q<debugger>, ["~> 1.1.3"])
+      s.add_dependency(%q<simplecov>, ["~> 0.6.4"])
     end
   else
-    s.add_dependency(%q<ruby-debug>, [">= 0"])
     s.add_dependency(%q<xmpp4r>, [">= 0"])
     s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<httparty>, [">= 0"])
-    s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-    s.add_dependency(%q<yard>, ["~> 0.6.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<rspec>, ["~> 2.10.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.8.0"])
+    s.add_dependency(%q<yard>, ["~> 0.8.1"])
+    s.add_dependency(%q<debugger>, ["~> 1.1.3"])
+    s.add_dependency(%q<simplecov>, ["~> 0.6.4"])
   end
 end
 
