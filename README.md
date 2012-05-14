@@ -1,4 +1,4 @@
-# Happy fun time bot
+# Happy fun time bot [![Build Status](https://secure.travis-ci.org/kot-begemot/happy_fun_time_bot.png?branch=master)](http://travis-ci.org/kot-begemot/happy_fun_time_bot)
 
 Have happy fun times with this configurable XMPP bot!  It is SO easy to use, especially for Hipchat!
 
