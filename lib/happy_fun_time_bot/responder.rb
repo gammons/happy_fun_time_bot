@@ -1,5 +1,3 @@
-puts 'loaded'
-
 class HappyFunTimeBot
   class Responder
     attr_accessor :command, :block

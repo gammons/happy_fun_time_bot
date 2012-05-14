@@ -1,7 +1,5 @@
 require 'xmpp4r/muc/helper/simplemucclient'
 
-puts 'loadedd'
-
 class HappyFunTimeBot
   # We want the MUC functionality to just handle shit for us.  Unfortunately we
   # have to override/repeat the join method in order to add the directive that
