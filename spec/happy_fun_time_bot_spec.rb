@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "HappyFunTimeBot" do
   it "should load everything properly" do
     HappyFunTimeBot
-    lambda { HappyFunTimeBot.new }.should_not raise_error
+    expect { HappyFunTimeBot.new }.to_not raise_error
   end
 
   describe "commands" do

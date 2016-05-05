@@ -1,15 +1,11 @@
-#!/usr/bin/env ruby
-
-require 'rubygems'
 require 'xmpp4r'
 require 'xmpp4r/muc/helper/simplemucclient'
 require 'open-uri'
 require 'cgi'
 
-$: << File.expand_path(File.dirname(__FILE__))
+require 'happy_fun_time_bot/responder'
+require 'happy_fun_time_bot/muc_client'
 
-require 'responder'
-require 'bot/muc_client'
 
 class HappyFunTimeBot
   attr_accessor :config, :client, :muc, :responders, :command_regexp
